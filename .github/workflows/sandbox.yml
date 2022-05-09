@@ -4,11 +4,9 @@ name: sandbox
   push:
     branches:
       - master
-    paths: 'sandbox/canonical/**'
   pull_request:
     branches:
       - master
-    paths: 'sandbox/canonical/**'
 jobs:
   maven-build:
     runs-on: ${{ matrix.os }}
@@ -29,6 +27,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-jdk-${{ matrix.java }}-maven-
       - name: Build it with Maven
-        run: cd sandbox/canonical; mvn -B test
+        run: mvn -B test
       - name: Run it
-        run: cd sandbox/canonical; ./run.sh 7
+        run: ./run.sh 7

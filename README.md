@@ -11,8 +11,8 @@ to the `sandbox` directory (you will need
 installed):
 
 ```bash
-$ git clone https://github.com/objectionary/eo.git
-$ cd eo/sandbox/canonical
+$ git clone https://github.com/objectionary/sandbox
+$ cd eo/sandbox
 ```
 
 Then, compile the code (you will need [Maven 3.3+](https://maven.apache.org/)

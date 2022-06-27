@@ -2,7 +2,7 @@
 
 [n] > fibonacci
   if. > @
-    n.less 3
+    n.lt 3
     small n
     rec n 1 1
 
@@ -15,5 +15,5 @@
   [n minus1 minus2] > rec
     if. > @
       n.eq 3
-      minus1.add minus2
-      rec (n.sub 1) (minus1.add minus2) minus1
+      minus1.plus minus2
+      rec (n.minus 1) (minus1.plus minus2) minus1

@@ -23,6 +23,3 @@
 # SOFTWARE.
 
 java -cp target/classes org.eolang.Main sandbox.app $@
-
-# next line is version of run.sh that checks testing correctness
-# echo "9th Fibonacci number is 34"

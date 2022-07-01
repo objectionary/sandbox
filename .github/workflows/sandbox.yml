@@ -4,11 +4,10 @@ name: sandbox
   push:
     branches:
       - master
-      - main
   pull_request:
     branches:
       - master
-      - main
+
 jobs:
   maven-build:
     runs-on: ${{ matrix.os }}
@@ -31,7 +30,4 @@ jobs:
       - name: Build it with Maven
         run: mvn -B test
       - name: Test it
-        run: touch tmp.txt
-        run: ./run.sh 7 >tmp.txt
-        run: python3 test.py
-        run: rm tmp.txt
+        run: ./run.sh 7 | python3 test.py

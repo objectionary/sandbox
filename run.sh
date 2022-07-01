@@ -22,5 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# java -cp target/classes org.eolang.Main sandbox.app $@
-echo "9th Fibonacci number is 34"
+java -cp target/classes org.eolang.Main sandbox.app $@
+
+# next line is version of run.sh that checks testing correctness
+# echo "9th Fibonacci number is 34"

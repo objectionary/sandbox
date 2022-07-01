@@ -1,5 +1,5 @@
 ---
-name: sandbox
+name: sandbox_windows
 "on":
   push:
     branches:

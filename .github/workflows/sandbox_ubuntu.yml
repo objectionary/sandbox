@@ -1,5 +1,5 @@
 ---
-name: sandbox
+name: sandbox_ubuntu
 "on":
   push:
     branches:

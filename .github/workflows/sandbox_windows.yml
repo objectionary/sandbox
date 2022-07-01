@@ -13,7 +13,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest]
+        os: [windows-latest]
         java: [11, 13]
     steps:
       - uses: actions/checkout@v2
@@ -29,5 +29,5 @@ jobs:
             ${{ runner.os }}-jdk-${{ matrix.java }}-maven-
       - name: Build it with Maven
         run: mvn -B test
-      - name: Test it
-        run: ./run.sh 7 | python3 test.py
+      - name: Run it
+        run: ./run.sh 7

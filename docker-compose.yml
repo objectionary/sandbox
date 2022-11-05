@@ -15,7 +15,7 @@ services:
       - compile
 
   app:
-    image: openjdk:8
+    image: openjdk:17.0.2
     container_name: eo-sandbox-app
     environment:
       { }

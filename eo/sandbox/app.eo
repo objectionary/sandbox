@@ -1,12 +1,27 @@
 +package sandbox
-+alias sandbox.fibonacci
-+alias org.eolang.io.stdout
-+alias org.eolang.txt.sscanf
-+alias org.eolang.txt.sprintf
 
-[args...] > app
-  stdout > @
-    sprintf
-      "%dth Fibonacci number is %d\n"
-      (sscanf "%d" (args.at 0)).at 0 > n
-      fibonacci n
+# @todo #38:30min To fix and enable the test below. There are several
+#  problems of the following code: 1) It uses varargs and maybe other
+#  problems related to new eolang version. 2) With previous version the
+#  test was failing with "Failed while trying to save to
+#  /home/tardis3/eo-sandbox/target/4-pull/org/eolang/txt/sprintf.eo: EO
+#  object 'org.eolang.txt.sprintf' is not found in this GitHub
+#  repository: https://github.com/objectionary/home. This means that you
+#  either misspelled the name of it or simply referred to your own local
+#  object somewhere in your code as if it was an object of 'org.eolang'
+#  package. Check the sources and make sure you always use +alias meta when
+#  you refer to an object outside of 'org.eolang', even if this object belongs
+#  to your package.
+#  https://raw.githubusercontent.com/objectionary/home/1d605bd/objects/org/eolang/txt/sprintf.eo "
+#+alias sandbox.fibonacci
+#+alias org.eolang.io.stdout
+#+alias org.eolang.txt.sscanf
+#+alias org.eolang.txt.sprintf
+#[args...] > app
+#  stdout > @
+#    sprintf
+#      "%dth Fibonacci number is %d\n"
+#      (sscanf "%d" (args.at 0)).at 0 > n
+#      fibonacci n
+[] > to-remove
+  TRUE > @

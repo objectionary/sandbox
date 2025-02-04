@@ -50,7 +50,7 @@ $ docker-compose -p eo-lang run maven
 ```
 
 > **Overriding the default command**
-> 
+>
 > By default, the container's command is `mvn compile`. You are free to override it, when running from terminal by appending the command you want to run after the service name, e.g. to run `mvn clean compile` use:
 > ```bash
 > docker-compose -p eo-lang run maven mvn clean compile
@@ -63,7 +63,7 @@ $ docker-compose -p eo-lang run app
 ```
 
 > **Passing command line arguments**
-> 
+>
 > It is possible to pass command line arguments to the program by appending them after the container name, e.g.:
 > ```bash
 > docker-compose -p eo-lang run app "Command line arguments go here" 10

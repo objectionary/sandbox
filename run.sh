@@ -22,4 +22,5 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-java -cp target/classes org.eolang.Main sandbox.app $@
+args=( "$@" )
+java -cp target/classes org.eolang.Main sandbox.app "${args[@]}"

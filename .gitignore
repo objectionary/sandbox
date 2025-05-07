@@ -1,7 +1,7 @@
-*.class
-*.jar
 .DS_Store
 .idea/
 .vscode/
+*.class
+*.jar
 node_modules/
 target/

@@ -1,5 +1,9 @@
 <img src="https://www.yegor256.com/images/books/elegant-objects/cactus.svg" height="100px" />
 
+> [!WARNING]
+> This repository is not longer valid.
+> Better try using source code samples from [eo3-programs](https://github.com/yegor256/eo3-programs).
+
 [![sandbox](https://github.com/objectionary/sandbox/actions/workflows/sandbox.yml/badge.svg?branch=master)](https://github.com/objectionary/sandbox/actions/workflows/sandbox.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/org.eolang/eo-maven-plugin.svg)](https://maven-badges.herokuapp.com/maven-central/org.eolang/eo-maven-plugin)
 
